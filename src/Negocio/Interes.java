@@ -4,7 +4,7 @@ package Negocio;
  *
  * @author USRVI-LC2
  */
-public class Interes {
+public abstract class Interes {
     
     protected String usuario,contraseña;
     protected int tiempoConectado;
@@ -47,9 +47,11 @@ public class Interes {
         return "Interes{" + "usuario=" + usuario + ", contrase\u00f1a=" + contraseña + ", tiempoConectado=" + tiempoConectado + '}';
     }
     
-    public void visualizar()
-    {
-        System.out.println("Usuario: " + this.getUsuario());
-    }
+//    public void visualizar()
+//    {
+//        System.out.println("Usuario: " + this.getUsuario());
+//    }
+//    
     
+    public abstract void visualizar();
 }
