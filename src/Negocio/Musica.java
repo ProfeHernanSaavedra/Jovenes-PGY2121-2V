@@ -16,8 +16,13 @@ public class Musica extends Interes implements IGustosTiempo{
         this.tipoMusica = tipoMusica;
     }
 
-    public Musica(String tipoMusica, String usuario, String contraseña, int tiempoConectado) {
-        super(usuario, contraseña, tiempoConectado);
+    public Musica(String tipoMusica, String usuario, String contraseña, int tiempoConectado, int like) {
+        super(usuario, contraseña, tiempoConectado, like);
+        this.tipoMusica = tipoMusica;
+    }
+    
+    public Musica(String tipoMusica,int tiempoConectado,int like) {
+        super(tiempoConectado,like);
         this.tipoMusica = tipoMusica;
     }
 

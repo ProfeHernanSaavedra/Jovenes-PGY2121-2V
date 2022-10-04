@@ -16,8 +16,13 @@ public class RedesSociales extends Interes implements IGustosTiempo{
         this.nombre = nombre;
     }
 
-    public RedesSociales(String nombre, String usuario, String contraseña, int tiempoConectado) {
-        super(usuario, contraseña, tiempoConectado);
+    public RedesSociales(String nombre, String usuario, String contraseña, int tiempoConectado, int like) {
+        super(usuario, contraseña, tiempoConectado, like);
+        this.nombre = nombre;
+    }
+
+    public RedesSociales(String nombre, int tiempoConectado, int like) {
+        super(tiempoConectado, like);
         this.nombre = nombre;
     }
 

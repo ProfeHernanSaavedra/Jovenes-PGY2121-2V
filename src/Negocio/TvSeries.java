@@ -16,10 +16,17 @@ public class TvSeries extends Interes implements IGustosTiempo{
         this.genero = genero;
     }
 
-    public TvSeries(String genero, String usuario, String contraseña, int tiempoConectado) {
-        super(usuario, contraseña, tiempoConectado);
+    public TvSeries(String genero, int tiempoConectado, int like) {
+        super(tiempoConectado, like);
         this.genero = genero;
     }
+
+    public TvSeries(String genero, String usuario, String contraseña, int tiempoConectado, int like) {
+        super(usuario, contraseña, tiempoConectado, like);
+        this.genero = genero;
+    }
+
+    
 
     public String getGenero() {
         return genero;
